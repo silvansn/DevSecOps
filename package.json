@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "auth.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node auth.js", // Script para iniciar a aplicação
+    "build": "echo 'No build steps required for this project'" // Script de build simples
   },
   "keywords": [],
   "author": "",
