@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "auth.js",
   "scripts": {
-    "start": "node auth.js", // Script para iniciar a aplicação
-    "build": "echo 'No build steps required for this project'" // Script de build simples
+    "start": "node auth.js",
+    "build": "echo 'No build steps required for this project'"
   },
   "keywords": [],
   "author": "",
