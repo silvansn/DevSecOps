@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+<<<<<<< HEAD
       - name: Checkout code
         uses: actions/checkout@v2 # Atualize para a versão que suporta Node.js 20
 
@@ -17,6 +18,15 @@ jobs:
         uses: actions/setup-node@v2 # Atualize para a versão que suporta Node.js 20
         with:
           node-version: "20" # Especifique a versão do Node.js que deseja usar, por exemplo '20'
+=======
+    - name: Checkout code
+      uses: actions/checkout@v2  # Atualize para a versão que suporta Node.js 20
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2  # Atualize para a versão que suporta Node.js 20
+      with:
+        node-version: '20'  # Especifique a versão do Node.js que deseja usar, por exemplo '20'
+>>>>>>> 06301bdb7046c952f6732ab1670d3a9a0871c49d
 
       - name: Install dependencies
         run: npm install
@@ -29,6 +39,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+<<<<<<< HEAD
       - name: Checkout code
         uses: actions/checkout@v2 # Atualize para a versão que suporta Node.js 20
 
@@ -38,3 +49,14 @@ jobs:
         run: |
           git remote add heroku https://git.heroku.com/<your-app-name>.git
           git push heroku master
+=======
+    - name: Checkout code
+      uses: actions/checkout@v2  # Atualize para a versão que suporta Node.js 20
+
+    - name: Deploy to Heroku
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: |
+        git remote add heroku https://git.heroku.com/<your-app-name>.git
+        git push heroku master
+>>>>>>> 06301bdb7046c952f6732ab1670d3a9a0871c49d
