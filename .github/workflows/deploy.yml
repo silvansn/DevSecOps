@@ -11,12 +11,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2  # Atualize para a versão que suporta Node.js 20
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v2  # Atualize para a versão que suporta Node.js 20
       with:
-        node-version: '14'
+        node-version: '20'  # Especifique a versão do Node.js que deseja usar, por exemplo '20'
 
     - name: Install dependencies
       run: npm install
@@ -30,7 +30,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2  # Atualize para a versão que suporta Node.js 20
 
     - name: Deploy to Heroku
       env:
@@ -38,4 +38,3 @@ jobs:
       run: |
         git remote add heroku https://git.heroku.com/<your-app-name>.git
         git push heroku master
-
