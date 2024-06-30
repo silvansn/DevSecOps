@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontre um Psicólogo</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Encontre um Psicólogo</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="findPsycho.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img class="logo" src="assets/logo.jpg" alt="logo">
+                <p class="titleLogo">Mind Care</p>
+            </div>
+            <div class="nav-links">
+                <span id="userName" class="userName"></span> <!-- Elemento para exibir o nome do usuário -->
+                <a href="#" id="logoutButton" class="hide-if-not-logged" onclick="handleLogout()">Sair</a>
+            </div>
+        </nav>
+    </header>
+    <h1 class="titleFindPsycho">Econtre um Psicólogo</h1>
+    <div class="textFindPsycho">
+        <p>Antes de entrar em contato com o profissional, recomendamos que você verifique suas credenciais no Cadastro Nacional de Profissionais de Psicologia. Isso garantirá que você esteja se consultando com um profissional devidamente registrado e qualificado.</p>
+        <p>Você pode pesquisar o profissional pelo nome ou CRP<a href="http://www.cadastro.cfp.org.br/hub/" target="_blank" rel="noopener noreferrer">(Conselho Regional de Psicologia)</a>.</p>
+        <p>Após verificar as credenciais do profissional, sinta-se à vontade para entrar em contato para agendar sua consulta, seja por E-mail ou Telefone.</p>
+    </div>
+    <br>
+    <div>
+        <h2 class="title2FindPsycho">Lista de Psicólogos</h2>
+        <label class="filterLabel">Filtro:</label>
+        <input class="filter" type="text" id="searchInput" placeholder="Pesquisar por especialidade">
+        <button class="clear-button" id="clearButton">Limpar</button>
+        <div class="psychologist-container" id="psychologistContainer"></div>
+        <div id="showMessageNoPsycho" style="display: none;" class="messageNoPsycho">
+            Nenhum psicólogo encontrado com essa especialidade!
+        </div>        
+    </div>
+    <br>
+    <br>
+    <footer>
+        <hr class="footer-line">
+        <p>Fale conosco através do E-mail:<br>
+            teste@teste.com
+        </p>
+    </footer>
+</body>
+</html>

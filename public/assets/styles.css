@@ -1,0 +1,481 @@
+/* styles.css */
+
+
+/*----------------------------------------- BODY / HEADER / FOOTER - INICIO*/
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #0CC0DF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0CC0DF;
+    color: #9B1F53;
+    padding: 25px 0;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    left: 5%; 
+    right: 5%;
+    bottom: 0;
+    width: 90%;
+    height: 3px;
+    background-color: #9B1F53;
+}
+
+header nav {
+    align-items: center;
+    margin-left: 5%;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #0CC0DF;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #9B1F53;
+}
+
+.logo{
+    width: 15%;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+.titleLogo{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: #0CC0DF;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 10px;
+    color: #9B1F53;
+}
+
+.footer-line {
+    border: none;
+    height: 3px;
+    background-color: #9B1F53;
+    margin: 0 auto;
+    width: 90%;
+}
+/*------------------------------------------------------------------ BODY / HEADER / FOOTER - FIM*/
+
+
+/*------------------------------------------------------------------ INDEX - INICIO*/
+.titleIndex {
+    color: white;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 45px;
+    width: 40%;
+}
+
+.picIndex {
+    position: absolute;
+    top: 250px;
+    right: 10%;
+    width: 500px;
+}
+
+.textIndex {
+    color: white;
+    width: 40%;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.register-button{
+    background-color: #9B1F53;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5%;
+    margin-top: 35px;
+}
+
+.register-button, .login-button:hover {
+    background-color: #711532; /* Altera a cor de fundo quando o botão é hover */
+}
+/*----------------------------------------------------------------------------------- INDEX - FIM*/
+
+
+/*-------------------------------------------------------------------------------- ABOUTUS - INICIO*/
+.titleAboutUs{
+    color: white;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 45px;
+    width: 40%;
+}
+
+.textAboutUs{
+    color: white;
+    width: 90%;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 190px;
+}
+/*---------------------------------------------------------------------------------- ABOUTUS - FIM*/
+
+
+/*--------------------------------------------------------------------------------- REGISTER - INICIO*/
+.titleRegister{
+    color: white;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 45px;
+    width: 40%;
+}
+
+.registerForm input {
+    display: block;
+    margin-bottom: 25px;
+    width: 250px;
+    
+}
+
+.contentRegister {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textRegister {
+    color: white;
+    width: 45%;
+    margin-left: 5%;
+    font-size: 25px;
+    text-align: left;
+}
+
+.registerForm {
+    margin-top: 35px;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.inputNome, .inputEmail, .inputPassword {
+    border: 1px solid #9B1F53;
+    border-radius: 15px;
+    margin: 0;
+    padding: 15px;
+}
+
+.info-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: gray;
+    font-size: 16px;
+}
+
+.info-icon:hover {
+    color: blue;
+}
+
+.input-container {
+    position: relative;
+}
+/*--------------------------------------------------------------REGISTER - FIM*/
+
+
+/*------------------------------------------------------------- LOGIN - INICIO*/
+.titleLogin {
+    color: white;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 45px;
+    width: 40%;
+}
+
+.loginForm input {
+    display: block;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+.loginContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-button{
+    background-color: #9B1F53;
+    color: white;
+    padding: 10px 70px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5%;
+    margin-top: 35px;
+}
+
+.textLogin{
+    color: #9B1F53;
+    margin-bottom: 170px;
+}
+
+.textLoginClick{
+    color:#9B1F53;
+}
+
+.textLoginClick:hover{
+    color: blue;
+}
+/*---------------------------------------------------------------------------- LOGIN - FIM*/
+
+
+/*------------------------------------------------------------------------- VOLUNTEER - INICIO*/
+.titleVolunteer{
+    color: white;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 45px;
+    width: 40%;
+}
+
+.textVolunteer{
+    color: white;
+    width: 90%;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.titleVolunteer2{
+    color: white;
+    text-align: left;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-size: 45px;
+    width: 90%;
+}
+
+.info-iconVolunteer {
+    cursor: pointer;
+    color: gray;
+    font-size: 16px;
+    position: relative;
+    right: 20px;
+    top: 10px;
+    transform: translateY(-50%);
+}
+
+.info-iconVolunteer:hover {
+    color: blue;
+}
+
+.volunteerForm{
+    margin-left: 5%;
+    margin-top: 25px;
+    width: 700px;
+}
+
+.inputNomeVolunteer, .inputEmailVolunteer, .inputPhone, .inputCrp, .inputSpecialty{
+    border: 1px solid #9B1F53;
+    border-radius: 15px;
+    margin: 0;
+    padding: 15px;
+}
+
+.input-line1, .input-line2{
+    margin-bottom: 25px;
+}
+
+.volunteerForm input{
+    width: 250px;
+}
+
+.input-containerVolunteer{
+    position: relative;
+    margin: 0;
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.submitVolunteer {
+    background-color: #9B1F53;
+    color: white;
+    padding: 10px 70px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 15px;
+}
+
+.submitVolunteer:hover {
+    background-color: #711532;
+}
+/*--------------------------------------------------------------------- VOLUNTEER - FIM*/
+
+/*--------------------------------------------------------------------- FINDPSYCHO - INICIO*/
+.titleFindPsycho{
+    color: white;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 45px;
+    width: 40%;
+}
+.title2FindPsycho{
+    color: white;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 35px;
+    width: 40%;
+}
+
+.textFindPsycho{
+    color: white;
+    width: 90%;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 5%;
+}
+.psychologist-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    color: #9B1F53;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid #9B1F53; /* Adiciona uma borda de 2px sólida na cor #9B1F53 */
+    border-radius: 5px; /* Adiciona bordas arredondadas para criar um formato de retângulo */
+    margin-bottom: 20px; /* Adiciona um espaço na parte inferior de cada cartão */
+    padding: 10px; /* Adiciona um espaço interno de 10px dentro de cada cartão */
+    width: 80%; /* Define a largura do cartão como 100% da largura do contêiner pai */
+    background-color: white; /* Define a cor de fundo do cartão */
+
+}
+.left-column {
+    flex: 1;
+    margin-left: 150px;
+}
+.right-column {
+    flex: 1;
+}
+
+.psychologist-card p {
+    margin: 5px 0;
+}
+
+.bold-label {
+    font-weight: bold;
+}
+
+.textFindPsycho{
+    color: white;
+    width: 90%;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.messageNoPsycho{
+    color:#711532;
+    text-align: center;
+    font-size: 25px;
+}
+
+.filter {
+    border: 1px solid #9B1F53;
+    border-radius: 15px;
+    margin: 0;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.clear-button{
+    background-color: #9B1F53;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5%;
+    margin-top: 35px;
+}
+
+.clear-button:hover {
+    background-color: #711532;
+}
+
+.filterLabel{
+    color: white;
+    font-size: 20px;
+    margin-left: 10%;
+}
+
+.userName{
+    color: #9B1F53;
+    font-weight: bold;
+}
+.userName:hover{
+    color: #711532;
+}
+/*--------------------------------------------------------------------- FINDPSYCHO - FIM */

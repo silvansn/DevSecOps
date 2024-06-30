@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registre-se</title>
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img class="logo" src="assets/logo.jpg" alt="logo">
+                <p class="titleLogo">Mind Care</p>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" id="homeLink">Home</a>
+                <a href="AboutUs.html" id="aboutUsLink">Sobre nós</a>
+                <a href="register.html" id="registerLink" class="hide-if-logged">Registre-se</a>
+                <a href="login.html" id="loginLink" class="hide-if-logged">Entrar</a>
+                <a href="Voluntary.html" id="voluntaryLink" class="hide-if-logged">Seja voluntário</a>
+            </div>
+        </nav>
+    </header>
+    <h1 class="titleRegister">Registre-se</h1>
+    <div class="contentRegister">
+        <form class="registerForm" id="registerForm" action="/auth/register" method="POST">
+            <div class="input-container">
+                <input class="inputNome" type="text" id="name" name="name" placeholder="Nome" required>
+                <span class="info-icon" title="Coloque seu nome">ℹ️</span>
+            </div>
+            <div class="input-container">
+                <input class="inputEmail" type="email" id="email" name="email" placeholder="Email" required>
+                <span class="info-icon" title="Coloque um email válido">ℹ️</span>
+            </div>
+            <div class="input-container">
+                <input class="inputPassword" type="password" id="password" name="password" placeholder="Nova senha" required>
+                <span class="info-icon" title="Coloque uma senha forte">ℹ️</span>
+            </div>
+            <input class="register-button" type="submit" value="Criar Conta">
+        </form>
+        <div id="errorMessages" class="error"></div>
+    </div>
+    <footer>
+        <hr class="footer-line">
+        <p>Fale conosco através do E-mail:<br>
+            teste@teste.com
+        </p>
+    </footer>
+</body>
+</html>zz
