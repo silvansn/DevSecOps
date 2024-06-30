@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Run build
-        run: npm run build
+        run: npm run build  # Aqui estamos usando o script 'build' definido no package.json
 
   deploy:
     needs: build
